@@ -22,8 +22,8 @@ $ docker run -p 3000:3000 --rm -it -v $(pwd):/app secondstate/ssvm-nodejs-starte
 From a second terminal window, you can test the local server.
 
 ```
-$ curl http://localhost:3000/?name=SSVM
-hello SSVM
+$ curl http://localhost:3000/ -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+{"sub":"1234567890","name":"John Doe","iat":1516239022}
 ```
 
 
