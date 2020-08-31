@@ -1,2 +1,2 @@
-const { say } = require('../pkg/ssvm_nodejs_starter_lib.js');
-console.log( say("Node.js") );
+const { decodeJwt } = require('../pkg/ssvm_nodejs_starter_lib.js');
+console.log( decodeJwt("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c") );
